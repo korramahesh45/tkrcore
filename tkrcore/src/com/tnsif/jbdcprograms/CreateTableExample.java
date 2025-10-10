@@ -1,15 +1,16 @@
 package com.tnsif.jbdcprograms;
 
+import java.beans.Statement;
 import java.sql.*;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import javax.sql.*;
 
 
 public class CreateTableExample {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
+            Connectio
+            n con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/new", "root", "1234");
 
             Statement stmt = con.createStatement();
