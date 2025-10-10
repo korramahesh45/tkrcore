@@ -21,6 +21,7 @@ public class CreateTableExample {
 
             System.out.println("✅ Table Created Successfully!");
             con.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
